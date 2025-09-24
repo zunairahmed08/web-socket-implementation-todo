@@ -1,4 +1,5 @@
-"Full Stack Todo App"
+                                                                                 "Full Stack Todo App"
+
 A simple full-stack Todo application with a **React frontend** and a **Node.js WebSocket backend**, providing real-time task synchronization across multiple clients.
 
 # Quick Start (2 Terminals)
