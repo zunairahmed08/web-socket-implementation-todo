@@ -1,34 +1,95 @@
+ Full Stack Todo App
 
+A simple full-stack Todo application with a **React frontend** and a **Node.js WebSocket backend**, providing real-time task synchronization across multiple clients.
 
-                       FULL STACK TODO APP                           
+# Quick Start (2 Terminals)
 
-                                                                       
-  QUICK START (2 TERMINALS):                                          
-                                                                        
- Terminal 1 - Backend:                                                  
-   cd webSocket && npm install && node server.js                      
-    ws://localhost:3001                                            
-  terminal 2 - frontend                                                                
-    cd todo-list && npm install && npm run dev                          
-    http://localhost:5173                                           
-                                                                       
- FEATURES:                                                          
-   Frontend:                            Backend:                       
-   • Add/Edit/Delete Tasks              • Real-time WebSocket         
-    • Responsive Design                  • Multi-client sync           
-    • Task History Page                  • In-memory storage            
-    • Real-time updates                  • Event broadcasting          
-    
-  PROJECT STRUCTURE:                                                  
-  Frontend (todo-list/):              Backend (webSocket/):           
-    ├── src/components/                 ├── server.js                       ├── TodoItem.jsx                ├── package.json                
-   │   ├── TodoForm.jsx                └── node_modules/               
-   │   ├── TodoList.jsx                                                
-   │   └── UI/                                                       
-   ├── App.jsx                                                         
-   ├── LogPage.jsx                                                     
-   └── main.jsx                                                        
-                                                                       
- REAL-TIME COMMUNICATION:                                           
-    Client Events: addTask, updateTask, deleteTask, getTasks            
-    Server Events: tasksUpdate, taskAdded, taskUpdated, taskDeleted     
+# Backend
+
+```bash
+cd webSocket
+npm install
+node server.js
+# WebSocket Server → ws://localhost:3001
+```
+
+# Frontend
+
+```bash
+cd todo-list
+npm install
+npm run dev
+# Frontend → http://localhost:5173
+```
+
+---
+
+# Features
+
+**Frontend**
+
+* Add, edit, and delete tasks
+* Responsive design
+* Task history page
+* Real-time updates
+
+**Backend**
+
+* Real-time WebSocket server
+* Multi-client synchronization
+* In-memory storage
+* Event broadcasting
+
+---
+
+# Project Structure
+
+*Frontend (todo-list/)**
+
+```
+src/components/
+ ├── TodoItem.jsx
+ ├── TodoForm.jsx
+ ├── TodoList.jsx
+ └── UI/
+App.jsx
+LogPage.jsx
+main.jsx
+package.json
+```
+
+*Backend (webSocket/)**
+
+```
+server.js
+package.json
+node_modules/
+```
+
+---
+
+# Real-time Communication
+
+**Client → Server**
+
+* addTask
+* updateTask
+* deleteTask
+* getTasks
+
+**Server → Client**
+
+* tasksUpdate
+* taskAdded
+* taskUpdated
+* taskDeleted
+
+---
+
+## Tech Stack
+
+* Frontend: React, Vite, CSS
+* Backend: Node.js, ws (WebSocket library)
+
+---
+
